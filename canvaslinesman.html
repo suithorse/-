@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+</head>
+<body>
+	<canvas id="canvas" width="500" height="500"></canvas>
+
+	<script type="text/javascript">
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		ctx.strokeRect(30,30,20,20);
+		ctx.lineWidth = 4;
+		ctx.beginPath();
+		ctx.moveTo(40,50);
+		ctx.lineTo(40,100);
+		ctx.moveTo(20,60);
+		ctx.lineTo(40,70);
+		ctx.moveTo(60,60);
+		ctx.lineTo(40,70);
+		ctx.moveTo(20,125);
+		ctx.lineTo(40,100);
+		ctx.moveTo(60,125);
+		ctx.lineTo(40,100);
+		ctx.stroke();
+	</script>
+</body>
+</html>
